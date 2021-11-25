@@ -1,4 +1,6 @@
-function App() {
+import React, {useState, useRef} from 'react';
+
+function FormHandling() {
 
     const [formState, setFormState] = useState({
       name: "",
@@ -67,7 +69,7 @@ function App() {
     )
   }
   
-  export default App;
+  export default FormHandling;
   
   // function App() {
   //   const [value, setValue] = useState(0);
