@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FormHandling from './FormHandling'
+import RefExamples from './RefExamples'
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormHandling />
+    <RefExamples />
   </React.StrictMode>,
   document.getElementById('root')
 );
