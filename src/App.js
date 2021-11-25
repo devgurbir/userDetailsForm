@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState, useRef} from 'react';
 
-function App() {
+function App(){
+
+  const inputRef = useRef(null);
+
+  const activateFocus = () => {
+    inputRef.current.focus();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style = {{ margin: "20px" }}>
+      <div>
+        <input style={{display: "block"}} ref={inputRef} type="text" placeholder = "Click on button to activate focus" />
+      </div>
+      <br/>
+      <div>
+        <button style={{display: "block"}} onClick = {activateFocus}>Click To Focus</button>
     </div>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
