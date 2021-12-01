@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import FormHandling from './FormHandling'
 import RefExamples from './RefExamples'
 import UserDetailsForm from "./FormAssignment/userDetailsForm"
-import Timer from "./timer/Timer"
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Timer init = {0} end = {10} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
