@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FormHandling from './FormHandling'
 import RefExamples from './RefExamples'
+import UserDetailsForm from "./FormAssignment/userDetailsForm"
 
 ReactDOM.render(
   <React.StrictMode>
-    <RefExamples />
+    <UserDetailsForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
